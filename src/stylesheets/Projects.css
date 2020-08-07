@@ -1,0 +1,35 @@
+.projectwrapper{
+    padding: 0;
+    background-color: white;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;;
+}
+.project-header h2 {
+    border-bottom: 5px solid #b4a2ae;
+    margin: 0;
+    letter-spacing: 5px;
+    padding: 60px 40px 20px 40px;
+    font-family: 'Lato', sans-serif;
+}
+
+.project-body{
+    padding: 30px;
+}
+.project1{
+    padding: 0 20px;
+}
+.project1 h3{
+    font-size: 1.75em;
+    font-family: sans-serif;
+}
+.project1 img{
+    /* width: 300px; */
+    width: 100%;
+    height: 100%;
+    /* border: 4px solid gray; */
+    object-fit: cover;
+}
+
+

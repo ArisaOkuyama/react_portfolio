@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c");
+.aboutme-wrapper {
+    margin: 0;
+    padding: 0;
+}
+.button{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 25vw 25vw 0;
+    border-color: transparent rgb(190, 188, 204) transparent transparent;
+}
+.button2{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25vw 0 0 25vw;
+    border-color: transparent transparent transparent rgb(190, 188, 204);
+}
+
+.button-name {
+    letter-spacing: 2px;
+    position: absolute;
+    top: 0%;
+    right: 3%;
+}
+.aboutme-header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    background-color:  white;
+}
+
+.aboutme-header h2 {
+    margin: 0;
+    letter-spacing: 5px;
+    padding: 60px 40px 40px 40px;
+    font-family: 'Lato', sans-serif;
+}
+
+.image-deco{
+    position: relative;
+    height: 350px;
+}
+.deco{
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    width: 180px;
+    height: 180px;
+    background-color: rgb(254, 249, 210, 0.1);
+    transform-origin: left;
+    transform: translate(-35%, -75%)  rotate(45deg);
+    border: 12px double #e5b3a3;
+    opacity: .7;
+    border-radius: 5px;
+}
+
+.profile-photo {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    width: 180px;
+    height: 180px;
+    transform: translate(-50%, -50%);
+    border: 12px double	#78a085;
+    opacity: .9;
+    border-radius: 5px;
+}
+.aboutme-body{
+    background-color: #e5b3a3;
+    margin: 0;
+    padding: 50px 30px;
+}
+
+.aboutme-body .profile-1 p{
+    font-size: 1.4em;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px; 
+}
+
+.aboutme-body .profile-1 h5{
+    letter-spacing: 4px;
+    font-size: 1.2em;
+    font-family: 'Lato', sans-serif;
+}
