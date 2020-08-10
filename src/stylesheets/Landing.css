@@ -12,6 +12,9 @@
     position: relative;;
     /* border-bottom: 5px solid #5079af; */
 }
+.container p {
+    color: rgb(65, 64, 64);
+}
 
 .japa {
     position: absolute;
@@ -22,7 +25,9 @@
     font-size: 1.2rem;
     font-family: "M PLUS Rounded 1c";
     letter-spacing: 2px;
+    /* background-color: indianred; */
 }
+
 .title{
     position: absolute;
     top: 30%;
@@ -158,10 +163,11 @@ img{
 }
 @media screen and (max-width: 1223px) {
 
-    img {
-        width: 100vw;
-        object-fit: cover;
-        height: 100%;
-        object-position: 75% top;
-    }
+img {
+    width: 100vw;
+    object-fit: cover;
+    height: 100%;
+    object-position: 75% top;
+}
+
 }

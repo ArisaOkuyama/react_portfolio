@@ -46,6 +46,7 @@
     letter-spacing: 5px;
     padding: 60px 40px 40px 40px;
     font-family: 'Lato', sans-serif;
+    color: rgb(65, 64, 64);
 }
 
 .image-deco{
@@ -84,7 +85,7 @@
 }
 
 .aboutme-body .profile-1 p{
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 1px; 
 }

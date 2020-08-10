@@ -13,14 +13,57 @@ const Projects = () => {
                 </div>
                 <div className="project-body">
                     <div className="project1">
-                        <h3>{store.language ? "FARMERS MARKET" : "ファーマーズマーケット"}</h3>
-                        <p>This application is to connect the farmer and the consumer together.</p>
-                        <span>Technology Stack</span>
-                        <span>Ruby on Rails, PostgreSQL,HTML, CSS</span>
-                        <img alt="me" src={ require('../img/ecoa.png') } />
+                        <h2>- EcoA</h2>
+                        
+                        <p>EcoA is a recipe platform for zero waste products to introduce the way we can reduce the waste and the footprint at home. It also helps to reduce packaging. MERN stack is used to build. </p>
+                        {/* <h3>Technology Stack</h3><br></br> */}
+                        <div className="stackwrapper">
+                            <div className="teckstack">
+                                <span>Node.js</span><span>|</span><span>Express</span><span>|</span><span>MongoDB</span><span>|</span>
+                            </div>
+                            <div className="teckstack">
+                                <span>React</span><span>|</span><span>HTML</span><span>|</span><span>CSS</span>
+                            </div>
+                        </div>
+                        <div className="projectimage border">
+                            <div className="link-wrapper">
+                                <div className="project-link">
+                                    <span>GitHub LINK</span>
+                                </div>
+                                <div className="project-link">
+                                    <span>VISIT WEBSITE</span>
+                                </div>
+                            </div>
+                            <img alt="me" src={ require('../img/ecoanew.png') } />
+                        </div>
                     </div>
-                    <div className="project2">
+                    <div className="project1">
+                        <h2>{store.language ? "- ONLINE FARMERS MARKET" : "ファーマーズマーケット"}</h2>
+                        <p>Seico mart is the online farmers market where the farmer can meet the consumer to be able to buy grocery locally and directly without any middle man. It has benefit for the both party.</p>
+                        <div className="stackwrapper">
+                            <div className="teckstack">
+                                <span>Ruby on Rails</span><span>|</span><span>PostgreSQL</span><span>|</span>
+                            </div>
+                            <div className="teckstack">
+                                <span>HTML</span><span>|</span><span>CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="projectimage">
+                        {/* <div></div> */}
                         <img alt="me" src={ require('../img/marketplace.png') } />
+                    </div>
+                    <div className="project1">
+                        <h2>{store.language ? "FIRST PORTFOLIO" : "旧ポートフォリオ"}</h2>
+                        <p>It is static page of my first portfolio that I made a part of Coder Academy assignment.</p>
+                        <div className="stackwrapper">
+                            <div className="teckstack">
+                                <span>HTML</span><span>|</span><span>CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="projectimage">
+                        <img alt="me" src={ require('../img/firstportfolio.png') } />
                     </div>
                 </div>
             </div>

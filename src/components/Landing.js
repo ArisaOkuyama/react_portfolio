@@ -22,7 +22,7 @@ const Landing = () => {
     <>
         <div className="container">
             <p className="japa" onClick={ onClick }>{store.language ? "日本語" : "ENGLISH"}</p>
-            <img className="background" alt="me" src={ require('../img/meandlake.jpg') } />
+            <img idName="background-img" alt="me" src={ require('../img/meandlake.jpg') } />
             <div className="title">
             <p>Arisa Okuyama</p>
             <p style={{borderBottom: "0px solid white"}}>{store.language ? false : "奥山有彩"}</p>
