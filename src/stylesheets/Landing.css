@@ -125,25 +125,25 @@
     line-height: 75px;
     border-radius: 50%;
     cursor: pointer;
-    transition: all 400ms ease-in-out 0ms;
+    transition: all 600ms ease-in-out 0ms;
 }
 
 .navmenu.active div:nth-child(2){
     top: -25%;
     left: 50%;
-    transform: translate(-50%, -75%);
+    transform: translate(-50%, -75%) rotateY(360deg);
 }
 
 .navmenu.active div:nth-child(3){
     top: 7%;
     left: 100%;
-    transform: translate(-55%, -60%);
+    transform: translate(-55%, -60%) rotateY(360deg);
 }
 
 .navmenu.active div:nth-child(4){
     top: 100%;
     left: 100%;
-    transform: translate(-50%, -75%);
+    transform: translate(-50%, -75%) rotateY(360deg);
 }
 
 

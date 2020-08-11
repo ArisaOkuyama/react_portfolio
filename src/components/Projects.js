@@ -27,12 +27,12 @@ const Projects = () => {
                         </div>
                         <div className="projectimage border">
                             <div className="link-wrapper">
-                                <div className="project-link">
+                                <a href="https://github.com/T3A2MERNStack" className="project-link">
                                     <span>GitHub LINK</span>
-                                </div>
-                                <div className="project-link">
+                                </a>
+                                <a href="https://ecoa.netlify.app/" className="project-link">
                                     <span>VISIT WEBSITE</span>
-                                </div>
+                                </a>
                             </div>
                             <img alt="me" src={ require('../img/ecoanew.png') } />
                         </div>
@@ -50,7 +50,14 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className="projectimage">
-                        {/* <div></div> */}
+                        <div className="link-wrapper">
+                            <a href="https://github.com/ArisaOkuyama/farmers_market" className="project-link">
+                                <span>GitHub LINK</span>
+                            </a>
+                            <a href="https://arcane-tor-43519.herokuapp.com/" className="project-link">
+                                <span>VISIT WEBSITE</span>
+                            </a>
+                        </div>
                         <img alt="me" src={ require('../img/marketplace.png') } />
                     </div>
                     <div className="project1">
@@ -63,6 +70,14 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className="projectimage">
+                        <div className="link-wrapper">
+                            <a href="https://github.com/ArisaOkuyama/aboutme" className="project-link">
+                                <span>GitHub LINK</span>
+                            </a>
+                            <a href="https://arcane-tor-43519.herokuapp.com/" className="project-link">
+                                <span>VISIT WEBSITE</span>
+                            </a>
+                        </div>
                         <img alt="me" src={ require('../img/firstportfolio.png') } />
                     </div>
                 </div>
