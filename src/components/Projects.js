@@ -74,7 +74,7 @@ const Projects = () => {
                             <a href="https://github.com/ArisaOkuyama/aboutme" className="project-link">
                                 <span>GitHub LINK</span>
                             </a>
-                            <a href="https://arcane-tor-43519.herokuapp.com/" className="project-link">
+                            <a href="https://arisaokuyama.github.io/aboutme/" className="project-link">
                                 <span>VISIT WEBSITE</span>
                             </a>
                         </div>
