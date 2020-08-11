@@ -18,11 +18,12 @@
 
 .japa {
     position: absolute;
+    cursor: pointer;
     top: 0%;
     right: 4%;
     width: 100px;
     text-align: right;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: "M PLUS Rounded 1c";
     letter-spacing: 2px;
     /* background-color: indianred; */
@@ -59,7 +60,7 @@
 }
 .navwrapper{
     position: absolute;
-    bottom: 10%;
+    bottom: 3%;
     left: 0%;
     /* transform: translate(-50%, -50%); */
     z-index: 4;
@@ -68,7 +69,7 @@
 
 .navmenu{
     position: relative;
-    width: 180px;
+    width: 140px;
     height: 120px;
     /* border: 1px solid green */
 }
@@ -80,12 +81,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
     /* z-index: 4; */
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     background-color: #da7c7f;
-    font-size: 20px;
+    font-size: 17px;
     text-align: center;
-    line-height: 80px;
+    line-height: 60px;
     border-radius: 50%;
     cursor: pointer;
     z-index: 3;
@@ -117,32 +118,40 @@
     left: 50%;
     transform: translate(-50%, -50%);
     /* z-index: 4; */
-    width: 75px;
-    height: 75px;
-    background-color: lightpink;
-    font-size: 15px;
+    width: 40px;
+    height: 40px;
     text-align: center;
-    line-height: 75px;
+    background-color: rgb(118, 145, 101);
+    font-size: 10px;
+    text-align: center;
+    line-height: 40px;
     border-radius: 50%;
     cursor: pointer;
     transition: all 600ms ease-in-out 0ms;
+    border: 2.4px dotted white;
+}
+
+.navbtn p{
+   margin: 0;
+   color: white;
+   font-family: 'Roboto', sans-serif;
 }
 
 .navmenu.active div:nth-child(2){
-    top: -25%;
+    top: -15%;
     left: 50%;
     transform: translate(-50%, -75%) rotateY(360deg);
 }
 
 .navmenu.active div:nth-child(3){
-    top: 7%;
+    top: 12%;
     left: 100%;
     transform: translate(-55%, -60%) rotateY(360deg);
 }
 
 .navmenu.active div:nth-child(4){
-    top: 100%;
-    left: 100%;
+    top: 90%;
+    left: 110%;
     transform: translate(-50%, -75%) rotateY(360deg);
 }
 

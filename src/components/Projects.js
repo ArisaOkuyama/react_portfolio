@@ -13,7 +13,7 @@ const Projects = () => {
                 </div>
                 <div className="project-body">
                     <div className="project1">
-                        <h2>- EcoA</h2>
+                        <h2>EcoA</h2>
                         
                         <p>EcoA is a recipe platform for zero waste products to introduce the way we can reduce the waste and the footprint at home. It also helps to reduce packaging. MERN stack is used to build. </p>
                         {/* <h3>Technology Stack</h3><br></br> */}
@@ -37,8 +37,9 @@ const Projects = () => {
                             <img alt="me" src={ require('../img/ecoanew.png') } />
                         </div>
                     </div>
+                    <hr class="accessory"></hr>
                     <div className="project1">
-                        <h2>{store.language ? "- ONLINE FARMERS MARKET" : "ファーマーズマーケット"}</h2>
+                        <h2>{store.language ? "ONLINE FARMERS MARKET" : "ファーマーズマーケット"}</h2>
                         <p>Seico mart is the online farmers market where the farmer can meet the consumer to be able to buy grocery locally and directly without any middle man. It has benefit for the both party.</p>
                         <div className="stackwrapper">
                             <div className="teckstack">
@@ -60,6 +61,7 @@ const Projects = () => {
                         </div>
                         <img alt="me" src={ require('../img/marketplace.png') } />
                     </div>
+                    <hr class="accessory"></hr>
                     <div className="project1">
                         <h2>{store.language ? "FIRST PORTFOLIO" : "旧ポートフォリオ"}</h2>
                         <p>It is static page of my first portfolio that I made a part of Coder Academy assignment.</p>
@@ -80,6 +82,7 @@ const Projects = () => {
                         </div>
                         <img alt="me" src={ require('../img/firstportfolio.png') } />
                     </div>
+                    <hr class="accessory"></hr>
                 </div>
             </div>
         </>

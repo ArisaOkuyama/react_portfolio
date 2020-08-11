@@ -25,7 +25,7 @@ const Landing = () => {
             <img idName="background-img" alt="me" src={ require('../img/meandlake.jpg') } />
             <div className="title">
             <p>Arisa Okuyama</p>
-            <p style={{borderBottom: "0px solid white"}}>{store.language ? false : "奥山有彩"}</p>
+            <p style={{borderBottom: "0px solid white",fontSize: "7vw"}}>{store.language ? false : "奥山有彩"}</p>
             <h6>{store.language ? "Junior Web Developer" : "プログラマー"}</h6>
             </div>
             <div className="navwrapper">
@@ -35,10 +35,10 @@ const Landing = () => {
                         <div className="navclosebtn">CLOSE</div>
                     </div>
                     <div className="navbtn">
-                        <p>ABOUT</p>
+                        <p>ABOUT ME</p>
                     </div>
                     <div className="navbtn">
-                        <p>WORK</p>
+                        <p>PROJECTS</p>
                     </div>
                     <div className="navbtn">
                         <p>CONTACT</p>
