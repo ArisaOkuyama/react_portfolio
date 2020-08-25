@@ -38,9 +38,8 @@
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    background-color: rgba(236, 236, 41, 0.082);
-    border-top: 7px solid rgba(233, 228, 228, 0.466);
-    /* border-top: 1px solid rgb(201, 198, 198, 0.3); */
+    background-color: rgba(236, 236, 41, 0.055);
+    border-top: 5px solid rgba(233, 228, 228, 0.466);
 }
 
 .aboutme-header h2 {
