@@ -1,10 +1,10 @@
 body {
     margin: 0px;
-    background-color: orange;
+    /* background-color: orange; */
 }
 
 .root {
     margin: 0;
-    background-color: green;
+    /* background-color: green; */
     padding: 0;
 }

@@ -1,0 +1,27 @@
+.contact-wrapper{
+    font-family: 'Lato', sans-serif;
+    padding: 0px 40px 40px 40px;
+
+}
+.contact-title {
+    letter-spacing: 7px;
+    padding: 20px 0px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+.contact-links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-links .linkedin, .twitter{
+    height: 50px;
+    width:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-links a{
+    text-decoration: none;
+}

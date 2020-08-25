@@ -16,7 +16,7 @@
     color: rgb(65, 64, 64);
 }
 
-.japa {
+.container .japa {
     position: absolute;
     cursor: pointer;
     top: 0%;
@@ -26,81 +26,119 @@
     font-size: 1rem;
     font-family: "M PLUS Rounded 1c";
     letter-spacing: 2px;
-    /* background-color: indianred; */
+    opacity: 1;
+    z-index: 5;
+    color:rgb(246, 244, 244) ;
 }
 
 .title{
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: 50%;
+    height: 100vh;
+    width: 65%;
     transform: translate(-50%, -50%);
 }
 
 .title p{
+    position: relative;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font: helvetica;
-    color: white;
-    font-size: 2.5em;
+    color: black;
+    font-size: 30px;
     text-align: center;
     margin: 0;
     padding-bottom: 20px;
-    /* width: 60vw; */
-    /* font-weight: 300; */
-    letter-spacing: 2px;
+    letter-spacing: 6px;
     font-family: 'Lato', sans-serif;
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid black;
 }
 
+
 .title h6{
-    color: white;
-    font-size: 1.3em;
+    position: relative;
+    top: 60%;
+    left: 50%;
+    /* height: 100vh; */
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 20px;
     text-align: center;
+    letter-spacing: 5px;
     margin-top: 10px;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    line-height: 30px;
 }
 .navwrapper{
     position: absolute;
-    bottom: 3%;
+    bottom: 0%;
     left: 0%;
-    /* transform: translate(-50%, -50%); */
-    z-index: 4;
-    /* background-color: red; */
 }
 
 .navmenu{
     position: relative;
-    width: 140px;
+    width: 100vw;
     height: 120px;
-    /* border: 1px solid green */
 }
 
 
 .navmenu .navcontroller{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* z-index: 4; */
+    bottom: 0%;
+    right: 0%;
     width: 60px;
     height: 60px;
-    background-color: #da7c7f;
     font-size: 17px;
     text-align: center;
     line-height: 60px;
-    border-radius: 50%;
     cursor: pointer;
     z-index: 3;
 }
 
 .navmenu .navclosebtn{
     display: none;
-    color: white;
+    color: gray;
     font-family: 'Roboto', sans-serif;
 }
 
 .navmenu .navopenbtn{
-    color: white;
+    color: black;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
     font-family: 'Roboto', sans-serif;
+}
+
+.navmenu .navbtn{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background-color: white;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 90px;
+    opacity: 0;
+    cursor: pointer;
+    transition: all ease-out 1.6s;
+}
+
+.navbtn p{
+   margin: 0;
+   z-index: 4;
+   color: black;
+   letter-spacing: 7px;
+   font-family: 'Roboto', sans-serif;
+   transition: all ease-out 0.3s;
+}
+.navmenu .navopenbtn:hover{
+    background-color: rgb(55, 129, 79);
+    color: white;   
 }
 
 .navmenu.active .navopenbtn{
@@ -108,54 +146,41 @@
 }
 
 .navmenu.active .navclosebtn{
-    display: inline;
+    display: block;
+    opacity: 1;
 }
 
-
-.navmenu .navbtn{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* z-index: 4; */
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    background-color: rgb(118, 145, 101);
-    font-size: 10px;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: all 600ms ease-in-out 0ms;
-    border: 2.4px dotted white;
-}
-
-.navbtn p{
-   margin: 0;
-   color: white;
-   font-family: 'Roboto', sans-serif;
+.navmenu.active .navclosebtn:hover{
+    background-color: rgb(55, 129, 79);
+    color: white;
+    
 }
 
 .navmenu.active div:nth-child(2){
-    top: -15%;
-    left: 50%;
-    transform: translate(-50%, -75%) rotateY(360deg);
+    bottom: 145%;
+    left: 0%;
+    opacity: 1;
+    /* transform: rotateY(360deg); */
 }
 
 .navmenu.active div:nth-child(3){
-    top: 12%;
-    left: 100%;
-    transform: translate(-55%, -60%) rotateY(360deg);
+    bottom: 75%;
+    left: 0%;
+    opacity: 1;
+    /* transform:  rotateY(0deg); */
 }
 
 .navmenu.active div:nth-child(4){
-    top: 90%;
-    left: 110%;
-    transform: translate(-50%, -75%) rotateY(360deg);
+    bottom: 0%;
+    left: 0%;
+    opacity: 1;
+    /* transform:  rotateY(0deg); */
 }
 
-
+.navmenu.active :hover{
+    background-color: rgb(55, 129, 79);
+    color: white;
+}
 
 @media screen and (min-width: 1224px) {
 
@@ -164,7 +189,7 @@ img{
     object-position: right top;
     width: 100vw;
     object-fit: cover;
-    height: 100%;
+    height: 50%;
     /* filter: blur(1px); */
 }
 
@@ -175,7 +200,9 @@ img{
 img {
     width: 100vw;
     object-fit: cover;
-    height: 100%;
+    height: 45%;
+    display: block;
+    opacity: 0.8;
     object-position: 75% top;
 }
 

@@ -15,8 +15,8 @@ const Projects = () => {
                     <div className="project1">
                         <h2>EcoA</h2>
                         
-                        <p>EcoA is a recipe platform for zero waste products to introduce the way we can reduce the waste and the footprint at home. It also helps to reduce packaging. MERN stack is used to build. </p>
-                        {/* <h3>Technology Stack</h3><br></br> */}
+                        <p>EcoA is a recipe platform for zero waste products to introduce the way we can reduce the waste and the footprint at home. <br></br>It also helps to reduce the packaging by making the products from row ingredients.</p>
+                        
                         <div className="stackwrapper">
                             <div className="teckstack">
                                 <span>Node.js</span><span>|</span><span>Express</span><span>|</span><span>MongoDB</span><span>|</span>

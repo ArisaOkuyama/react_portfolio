@@ -38,7 +38,9 @@
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    background-color:  white;
+    background-color: rgba(236, 236, 41, 0.082);
+    border-top: 7px solid rgba(233, 228, 228, 0.466);
+    /* border-top: 1px solid rgb(201, 198, 198, 0.3); */
 }
 
 .aboutme-header h2 {
@@ -65,6 +67,7 @@
     border: 12px double #e5b3a3;
     opacity: .7;
     border-radius: 5px;
+    transition: 3s;  
 }
 
 .profile-photo {
@@ -74,7 +77,7 @@
     width: 180px;
     height: 180px;
     transform: translate(-50%, -50%);
-    border: 12px double	#78a085;
+    border: 12px double	#78a085a6;
     opacity: .9;
     border-radius: 5px;
 }
@@ -82,16 +85,21 @@
     background-color: #e5b3a3;
     margin: 0;
     padding: 50px 30px;
+    border-top: 7px solid rgba(228, 222, 222, 0.5);
+    border-bottom: 7px solid rgba(252, 246, 246, 0.5);
 }
 
 .aboutme-body .profile-1 p{
     font-size: 1.2em;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 1px; 
+    line-height: 30px;
+    text-align: center;
 }
 
 .aboutme-body .profile-1 h5{
     letter-spacing: 4px;
     font-size: 1.2em;
+    text-align: center;
     font-family: 'Lato', sans-serif;
 }

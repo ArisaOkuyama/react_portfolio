@@ -5,6 +5,7 @@ import Landing from './components/Landing'
 import Projects from './components/Projects'
 import stateReducer from './stateReducer'
 import StateContext from './store'
+import Contact from './components/Contact'
 
 function App() {
   const [store, dispatch] = useReducer(stateReducer, {language: true} )
@@ -14,6 +15,7 @@ function App() {
         <Landing />
         <AboutMe />
         <Projects />
+        <Contact />
       </StateContext.Provider>
     </>
   );
