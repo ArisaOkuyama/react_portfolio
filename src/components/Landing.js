@@ -39,14 +39,16 @@ const Landing = () => {
                         {/* </div> */}
                         <div className="navclosebtn">＞＞</div>
                     </div>
+                    
                     <div className="navbtn">
-                        <p>ABOUT</p>
+                        <a href="#aboutme"><p>ABOUT ME</p></a>
+                    </div>
+                    
+                    <div className="navbtn">
+                        <a href="#project"><p>PROJECTS</p></a>
                     </div>
                     <div className="navbtn">
-                        <p>PROJECTS</p>
-                    </div>
-                    <div className="navbtn">
-                        <p>CONTACT</p>
+                    <a href="#contact"><p>CONTACT</p></a>
                     </div>
                 </div>
             </div>

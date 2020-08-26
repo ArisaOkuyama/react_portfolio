@@ -11,6 +11,7 @@
     /* background-color: rgba(1, 1, 1, 1); */
     position: relative;;
     /* border-bottom: 5px solid #5079af; */
+    
 }
 .container p {
     color: rgb(65, 64, 64);
@@ -28,7 +29,7 @@
     letter-spacing: 2px;
     opacity: 1;
     z-index: 5;
-    color:rgb(246, 244, 244) ;
+    /* color:rgb(246, 244, 244) ; */
 }
 
 .title{
@@ -117,15 +118,15 @@
     bottom: 0%;
     right: 0%;
     width: 100%;
-    height: 100px;
+    height: 70px;
     text-align: center;
     background-color: white;
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-align: center;
-    line-height: 90px;
+    line-height: 70px;
     opacity: 0;
     cursor: pointer;
-    transition: all ease-out 1.6s;
+    transition: all ease-out 0.8s;
 }
 
 .navbtn p{
@@ -135,6 +136,10 @@
    letter-spacing: 7px;
    font-family: 'Roboto', sans-serif;
    transition: all ease-out 0.3s;
+}
+.navbtn a{
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease;
 }
 .navmenu .navopenbtn:hover{
     background-color: rgb(55, 129, 79);
@@ -157,14 +162,14 @@
 }
 
 .navmenu.active div:nth-child(2){
-    bottom: 145%;
+    bottom: 116%;
     left: 0%;
     opacity: 1;
     /* transform: rotateY(360deg); */
 }
 
 .navmenu.active div:nth-child(3){
-    bottom: 75%;
+    bottom: 58%;
     left: 0%;
     opacity: 1;
     /* transform:  rotateY(0deg); */

@@ -24,4 +24,9 @@
 
 .contact-links a{
     text-decoration: none;
+    color:#1DA1F2;
+}
+
+.contact-links .linkedin a{
+    color:#0072b1;
 }

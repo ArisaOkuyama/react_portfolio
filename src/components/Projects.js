@@ -7,7 +7,7 @@ const Projects = () => {
     const { store, dispatch } = useContext(StateContext)
     return (
         <>
-            <div className="projectwrapper">
+            <div className="projectwrapper" id="project">
                 <div className="project-header">
                     <h2>{store.language ? "PROJECTS" : "プロジェクト"}</h2>
                 </div>

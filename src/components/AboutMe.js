@@ -15,7 +15,7 @@ const AboutMe = () => {
 
     return (
         <>
-            <div className="aboutme-wrapper">
+            <div className="aboutme-wrapper" id="aboutme">
                 {/* <p className="button-name">{store.language ? "JP": "ENGLISH"}</p> */}
                 <div className="aboutme-header">
                     <div className="button" onClick={ onClick }></div>

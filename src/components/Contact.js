@@ -8,7 +8,7 @@ import { faTwitter, faLinkedin } from '@fortawesome/fontawesome-free-brands';
 const Contact = () => {
     return(
         <>  
-            <div className="contact-wrapper">
+            <div className="contact-wrapper" id="contact">
                 <h2 className="contact-title">CONTACT ME</h2>
                 <p>I am currently looking for full-time employment.</p>
                 <p>Feel free to reach out to me via email or links below.<br></br><br></br>
