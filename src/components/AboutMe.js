@@ -23,7 +23,7 @@ const AboutMe = () => {
                     <h2>{store.language ? "ABOUT ME" : "自己紹介"}</h2>
                     <div className="image-deco">
                         <div className="deco"></div>
-                        <img className="profile-photo" alt="me" src="https://media-exp1.licdn.com/dms/image/C4D03AQGR51TVKQnN5w/profile-displayphoto-shrink_400_400/0?e=1603929600&v=beta&t=7AEyV5GR9UFsnzMT8fT3U1hd_ru2H2PMNluygzzLtzs" />
+                        <img className="profile-photo" alt="me" src={ require('../img/profilephoto.jpg') } />
                     </div>
                 </div>
                 <div className="aboutme-body">
@@ -35,7 +35,7 @@ const AboutMe = () => {
                     </div>
                     <div className="profile-1">
                         <div className="profilesection">
-                            <h5>RESUME</h5>
+                            <h5>RESUME LINK</h5>
                             <p>ENGLISH | JAPANESE</p>
                         </div>
                     </div>
