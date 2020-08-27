@@ -4,6 +4,7 @@ import StateContext from '../store'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import Ball from './Ball'
 
 const Landing = () => {
 
@@ -26,6 +27,13 @@ const Landing = () => {
         <div className="container">
             <p className="japa" onClick={ onClick }>{store.language ? "日本語" : "ENGLISH"}</p>
             <img idName="background-img" alt="me" src={ require('../img/meandlake.jpg') } />
+            <Ball left='85' bottom='24' color="rgb(240, 235, 165, 0.6)" height='1.7' width='1.7'/>
+            <Ball left='35' bottom='28' color="rgb(242, 243, 211, 0.6)"/>
+            <Ball left='55' bottom='5'  color="rgb(207, 228, 193, 0.6)"/>
+            <Ball left='72' bottom='36' color="rgb(206, 228, 226,0.8)" />
+            <Ball left='20' bottom='15' color="rgb(243, 202, 184, 0.6)" height='1.7' width='1.7' />
+            <Ball left='10' bottom='45' color="rgb(197, 210, 235, 0.6)" />
+            <Ball left='80' bottom='49' color="rgb(207, 228, 193, 0.6)" height='1.7' width='1.7'/>
             <div className="title">
                 <p>Arisa Okuyama</p>
                 <p style={{borderBottom: "0px solid white",fontSize: "7vw"}}>{store.language ? false : "奥山有彩"}</p>
@@ -35,7 +43,7 @@ const Landing = () => {
                 <div className="navmenu">
                     <div className="navcontroller" onClick={togglebtn}>
                         {/* <div  > */}
-                            <FontAwesomeIcon className="navopenbtn" icon={faBars} size="2x" style={{color: 'gray'}}/>
+                            <FontAwesomeIcon className="navopenbtn" icon={faBars} size="1x" style={{color: '#c6c6c6'}}/>
                         {/* </div> */}
                         <div className="navclosebtn">＞＞</div>
                     </div>

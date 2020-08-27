@@ -8,10 +8,7 @@
     padding: 0;
     width: 100%;
     height: 100vh;
-    /* background-color: rgba(1, 1, 1, 1); */
     position: relative;;
-    /* border-bottom: 5px solid #5079af; */
-    
 }
 .container p {
     color: rgb(65, 64, 64);
@@ -20,7 +17,7 @@
 .container .japa {
     position: absolute;
     cursor: pointer;
-    top: 0%;
+    top: 45%;
     right: 4%;
     width: 100px;
     text-align: right;
@@ -57,7 +54,6 @@
     border-bottom: 1px solid black;
 }
 
-
 .title h6{
     position: relative;
     top: 60%;
@@ -76,7 +72,7 @@
 .navwrapper{
     position: absolute;
     bottom: 0%;
-    left: 0%;
+    right: 0%;
 }
 
 .navmenu{
@@ -90,11 +86,11 @@
     position: absolute;
     bottom: 0%;
     right: 0%;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     font-size: 17px;
     text-align: center;
-    line-height: 60px;
+    line-height: 80px;
     cursor: pointer;
     z-index: 3;
 }
@@ -107,9 +103,9 @@
 
 .navmenu .navopenbtn{
     color: black;
-    width: 40px;
-    height: 40px;
-    padding: 10px;
+    width: 30px;
+    height: 30px;
+    padding: 0 0 50 50;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -142,7 +138,7 @@
     -webkit-transition: all 0.5s ease;
 }
 .navmenu .navopenbtn:hover{
-    background-color: rgb(55, 129, 79);
+    /* background-color: rgb(55, 129, 79); */
     color: white;   
 }
 
@@ -153,39 +149,27 @@
 .navmenu.active .navclosebtn{
     display: block;
     opacity: 1;
-}
-
-.navmenu.active .navclosebtn:hover{
-    background-color: rgb(55, 129, 79);
-    color: white;
-    
+    color: rgb(55, 129, 79);
 }
 
 .navmenu.active div:nth-child(2){
     bottom: 116%;
     left: 0%;
     opacity: 1;
-    /* transform: rotateY(360deg); */
 }
 
 .navmenu.active div:nth-child(3){
     bottom: 58%;
     left: 0%;
     opacity: 1;
-    /* transform:  rotateY(0deg); */
 }
 
 .navmenu.active div:nth-child(4){
     bottom: 0%;
     left: 0%;
     opacity: 1;
-    /* transform:  rotateY(0deg); */
 }
 
-.navmenu.active :hover{
-    background-color: rgb(55, 129, 79);
-    color: white;
-}
 
 @media screen and (min-width: 1224px) {
 

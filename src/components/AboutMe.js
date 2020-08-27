@@ -35,8 +35,8 @@ const AboutMe = () => {
                     </div>
                     <div className="profile-1">
                         <div className="profilesection">
-                            <h5>RESUME LINK</h5>
-                            <p>ENGLISH | JAPANESE</p>
+                            <h5>RESUMEE</h5>
+                            {/* <p>ENGLISH | JAPANESE</p> */}
                         </div>
                     </div>
                 </div>
