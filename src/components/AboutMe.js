@@ -29,13 +29,14 @@ const AboutMe = () => {
                 <div className="aboutme-body">
                     <div className="profile-1">
                         <h5>MY NAME IS ARISA.</h5>
-                        <p>My passion is to work towards making the world more sustainable environment.
-                            My goal is to be working as a part of it. I believe technology makes the world a better place. As technology grows, we can make reduce the footprint.
+                        <p>My passion is the technology and the sustainable environment/energy . I love to be working towards making the world more sustainable environment by the technology that I helped to build.
+                            I believe technology makes the world a better place. As technology grows, we can make reduce the footprint.
                         </p>
+                        <p>I am also like the challenges and work towards the goal.</p>
                     </div>
                     <div className="profile-1">
                         <div className="profilesection">
-                            <h5>RESUMEE</h5>
+                            <h5>RESUME</h5>
                             {/* <p>ENGLISH | JAPANESE</p> */}
                         </div>
                     </div>

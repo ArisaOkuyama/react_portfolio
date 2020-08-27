@@ -26,23 +26,25 @@
   }
 .project1{
     margin: 0;
-    /* background-color: rgb(230, 207, 207); */
     padding:0;
-    font-size: 4vw;
-    font-weight: 800;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
     text-align: center;
-    line-height: 22px;
+    line-height: 25px;
     letter-spacing: 1.5px; 
 }
 .project1 h2{
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
+    font-family: 'Lato', sans-serif;
+    margin-bottom:  30px;
     text-align: center;
-    font-weight: 900;
+    font-weight: 600;
     letter-spacing: 5px; 
+    line-height: 35px;
+    color: rgb(68, 67, 67);
 }
+.project1 p{
+    margin:  30px 0;
 
+}
 .stackwrapper{
     display: flex;
     flex-direction: row;
@@ -63,13 +65,13 @@
 }
 .projectimage{
     width: 100%;
-    margin: 30px 0;
+    /* margin: 30px 0; */
     position: relative;
 }
 .link-wrapper{
-    position: absolute;
+    /* position: absolute; */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     width: 100%;
@@ -78,29 +80,33 @@
     background-size: 100%;
     transition: 1.4s;
     z-index: 3;
+    margin: 20px 0;
 }
 .project-link{
     transition: 1s;
-    padding:20px;
+    /* padding:20px; */
     background-color: white;
-    opacity: 0;
+    /* opacity: 0; */
     border-radius: 10px;
     background-color: white;
     text-decoration: none;
     color: rgb(64, 73, 73);
+    font-weight: 900;
 }
-.link-wrapper:hover {
+/* .link-wrapper:hover {
     background-color: rgba(107, 110, 110, 0.8);
 }
 .link-wrapper:hover .project-link{
     opacity: 1;
-}
-.project-link span {
-    font-family: 'Roboto', sans-serif; 
-    letter-spacing: 4px; 
-    font-size: 4vw;
-    padding-bottom: 8px;
-    border-bottom: 1px solid white;
+} */
+.project-link h5 {
+    letter-spacing: 4px;
+    /* font-size: 1.2em; */
+    text-align: center;
+    margin: 10px;
+    font-family: 'Lato', sans-serif;
+    /* padding-bottom: 8px; */
+    /* border-bottom: 1px solid white; */
 } 
 .project-link:hover {
     background-color:rgb(90, 128, 90);
@@ -110,10 +116,8 @@
 .projectimage img{
     width: 100%;
     z-index: 4;
+    border-bottom: 5px double darkslategray;
+    border-top: 5px double rgb(69, 107, 107);
 }
 
-.border{
-    border-top: 5px double rgb(69, 107, 107);
-    border-bottom: 5px double darkslategray;
-}
 

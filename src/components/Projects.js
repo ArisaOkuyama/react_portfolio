@@ -2,9 +2,15 @@ import React, { useContext } from 'react';
 import '../stylesheets/Projects.css';
 import StateContext from '../store'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/fontawesome-free-brands';
+import Project from './nestedcomponents/Project'
 
 const Projects = () => {
     const { store, dispatch } = useContext(StateContext)
+    const ecoA = ["Node.js","Express","MongoDB","React"]
+    const farmers = ["Ruby on Rails","PostgreSQL","Bootstrap"]
+    // const portfolio = ["HTML","CSS"]
     return (
         <>
             <div className="projectwrapper" id="project">
@@ -12,76 +18,32 @@ const Projects = () => {
                     <h2>{store.language ? "PROJECTS" : "プロジェクト"}</h2>
                 </div>
                 <div className="project-body">
-                    <div className="project1">
-                        <h2>EcoA</h2>
-                        
-                        <p>EcoA is a recipe platform for zero waste products to introduce the way we can reduce the waste and the footprint at home. <br></br>It also helps to reduce the packaging by making the products from row ingredients.</p>
-                        
-                        <div className="stackwrapper">
-                            <div className="teckstack">
-                                <span>Node.js</span><span>|</span><span>Express</span><span>|</span><span>MongoDB</span><span>|</span>
-                            </div>
-                            <div className="teckstack">
-                                <span>React</span><span>|</span><span>HTML</span><span>|</span><span>CSS</span>
-                            </div>
-                        </div>
-                        <div className="projectimage border">
-                            <div className="link-wrapper">
-                                <a href="https://github.com/T3A2MERNStack" className="project-link">
-                                    <span>GitHub LINK</span>
-                                </a>
-                                <a href="https://ecoa.netlify.app/" className="project-link">
-                                    <span>VISIT WEBSITE</span>
-                                </a>
-                            </div>
-                            <img alt="me" src={ require('../img/ecoanew.png') } />
-                        </div>
-                    </div>
+                    <Project 
+                    projectName='EcoA'
+                    projectDescription='EcoA is a recipe platform for zero waste products to introduce the way we can reduce the waste and the footprint at home. <br></br>It also helps to reduce the packaging by making the products from row ingredients.'
+                    repoUrl= 'https://github.com/T3A2MERNStack'
+                    imageUrl= { require('../img/ecoanew.png') }
+                    stacks = {ecoA}
+                    />
                     <hr class="accessory"></hr>
-                    <div className="project1">
-                        <h2>{store.language ? "ONLINE FARMERS MARKET" : "ファーマーズマーケット"}</h2>
-                        <p>Seico mart is the online farmers market where the farmer can meet the consumer to be able to buy grocery locally and directly without any middle man. It has benefit for the both party.</p>
-                        <div className="stackwrapper">
-                            <div className="teckstack">
-                                <span>Ruby on Rails</span><span>|</span><span>PostgreSQL</span><span>|</span>
-                            </div>
-                            <div className="teckstack">
-                                <span>HTML</span><span>|</span><span>CSS</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="projectimage">
-                        <div className="link-wrapper">
-                            <a href="https://github.com/ArisaOkuyama/farmers_market" className="project-link">
-                                <span>GitHub LINK</span>
-                            </a>
-                            <a href="https://arcane-tor-43519.herokuapp.com/" className="project-link">
-                                <span>VISIT WEBSITE</span>
-                            </a>
-                        </div>
-                        <img alt="me" src={ require('../img/marketplace.png') } />
-                    </div>
+                    <Project 
+                    projectName={store.language ? "ONLINE FARMERS MARKET" : "ファーマーズマーケット"}
+                    projectDescription='Seico mart is the online farmers market where the farmer can meet the consumer to be able to buy grocery locally and directly without any middle man. It has benefit for the both party.'
+                    repoUrl= 'https://github.com/ArisaOkuyama/farmers_market'
+                    webUrl="https://arcane-tor-43519.herokuapp.com/"
+                    stacks = {farmers}
+                    imageUrl= { require('../img/marketplace.png') }
+                    />
                     <hr class="accessory"></hr>
-                    <div className="project1">
-                        <h2>{store.language ? "FIRST PORTFOLIO" : "旧ポートフォリオ"}</h2>
-                        <p>It is static page of my first portfolio that I made a part of Coder Academy assignment.</p>
-                        <div className="stackwrapper">
-                            <div className="teckstack">
-                                <span>HTML</span><span>|</span><span>CSS</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="projectimage">
-                        <div className="link-wrapper">
-                            <a href="https://github.com/ArisaOkuyama/aboutme" className="project-link">
-                                <span>GitHub LINK</span>
-                            </a>
-                            <a href="https://arisaokuyama.github.io/aboutme/" className="project-link">
-                                <span>VISIT WEBSITE</span>
-                            </a>
-                        </div>
-                        <img alt="me" src={ require('../img/firstportfolio.png') } />
-                    </div>
+
+                    <Project 
+                    projectName={store.language ? "FIRST PORTFOLIO" : "旧ポートフォリオ"}
+                    projectDescription='It is static page of my first portfolio that I made a part of Coder Academy assignment.'
+                    repoUrl= 'https://github.com/ArisaOkuyama/aboutme'
+                    webUrl="https://arisaokuyama.github.io/aboutme/"
+                    // stacks = null
+                    imageUrl= { require('../img/firstportfolio.png') } 
+                    />
                     <hr class="accessory"></hr>
                 </div>
             </div>
