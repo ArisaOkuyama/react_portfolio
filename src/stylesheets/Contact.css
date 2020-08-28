@@ -12,6 +12,7 @@
 .contact-links {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 3rem;
 }
 
 .contact-links .linkedin, .twitter{
@@ -29,4 +30,11 @@
 
 .contact-links .linkedin a{
     color:#0072b1;
+}
+
+@media screen and (min-width: 736px) {
+ .contact-wrapper{
+     padding : 0 20%;
+     text-align: center;
+ }
 }

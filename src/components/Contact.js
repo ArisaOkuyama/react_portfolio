@@ -25,7 +25,7 @@ const Contact = () => {
                         </a>
                     </div>
                 </div>
-                <hr class="accessory"></hr>
+                <hr className="accessory"></hr>
             </div>
         </>
     )

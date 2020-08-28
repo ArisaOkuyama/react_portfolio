@@ -17,7 +17,7 @@ const Ball = (props) => {
 
     return (
         <>
-            {console.log(props)}
+            {/* {console.log(props)} */}
             <div style={style} className="ball"></div>
         </>
 

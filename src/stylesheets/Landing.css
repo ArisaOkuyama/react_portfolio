@@ -171,7 +171,7 @@
 }
 
 
-@media screen and (min-width: 1224px) {
+@media screen and (min-width: 735px) {
 
 img{
     /* padding-top: 50px; */
@@ -186,13 +186,15 @@ img{
 }
 @media screen and (max-width: 1223px) {
 
-img {
-    width: 100vw;
-    object-fit: cover;
-    height: 45%;
-    display: block;
-    opacity: 0.8;
-    object-position: 75% top;
-}
-
+    img {
+        width: 100vw;
+        object-fit: cover;
+        height: 45%;
+        display: block;
+        opacity: 0.8;
+        object-position: 75% top;
+    }
+    .title {
+        width: 50%;
+    }
 }
