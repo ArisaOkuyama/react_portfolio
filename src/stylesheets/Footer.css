@@ -1,0 +1,7 @@
+.footerWrapper{
+    background-color: gray;
+    display: block;
+}
+.footerWrapper h1{
+    margin: 0;
+}

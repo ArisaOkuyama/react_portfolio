@@ -23,11 +23,20 @@ const Projects = () => {
                     />
                     <hr className="accessory"></hr>
                     <Project 
+                    projectName={store.language ? "FIRST PORTFOLIO" : "旧ポートフォリオ"}
+                    projectDescription='It is static page of my first portfolio that I made a part of Coder Academy assignment.'
+                    repoUrl= 'https://github.com/ArisaOkuyama/aboutme'
+                    webUrl="https://arisaokuyama.github.io/aboutme/"
+                    imageUrl= { require('../img/firstportfolio.png') } 
+                    />
+                    <hr className="accessory"></hr>
+                    <Project 
                     projectName='EcoA'
                     projectDescription="EcoA is a recipe platform for zero waste products to introduce the way we can reduce the waste and the footprint at home. It also helps to reduce the packaging by making the products from row ingredients."
                     repoUrl= 'https://github.com/T3A2MERNStack'
                     imageUrl= { require('../img/ecoanew.png') }
                     stacks = {ecoA}
+                    webUrl="https://ecoa.netlify.app/"
                     />
                     <hr className="accessory"></hr>
                     <Project 
@@ -37,14 +46,6 @@ const Projects = () => {
                     webUrl="https://arcane-tor-43519.herokuapp.com/"
                     stacks = {farmers}
                     imageUrl= { require('../img/marketplace.png') }
-                    />
-                    <hr className="accessory"></hr>
-                    <Project 
-                    projectName={store.language ? "FIRST PORTFOLIO" : "旧ポートフォリオ"}
-                    projectDescription='It is static page of my first portfolio that I made a part of Coder Academy assignment.'
-                    repoUrl= 'https://github.com/ArisaOkuyama/aboutme'
-                    webUrl="https://arisaokuyama.github.io/aboutme/"
-                    imageUrl= { require('../img/firstportfolio.png') } 
                     />
                     <hr className="accessory"></hr>
                 </div>

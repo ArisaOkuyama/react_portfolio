@@ -1,200 +1,263 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c");
 
-
 .container {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100vh;
-    position: relative;;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  position: relative;
 }
 .container p {
-    color: rgb(65, 64, 64);
+  color: rgb(65, 64, 64);
 }
 
 .container .japa {
-    position: absolute;
-    cursor: pointer;
-    top: 45%;
+  position: absolute;
+  cursor: pointer;
+  top: 45%;
+  right: 4%;
+  width: 100px;
+  text-align: right;
+  font-size: 1rem;
+  font-family: "M PLUS Rounded 1c";
+  letter-spacing: 2px;
+  opacity: 1;
+  z-index: 5;
+  /* color:rgb(246, 244, 244) ; */
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100vh;
+  width: 65%;
+  transform: translate(-50%, -50%);
+}
+
+.title p {
+  position: relative;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font: helvetica;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 20px;
+  letter-spacing: 6px;
+  font-family: "Lato", sans-serif;
+  border-bottom: 1px solid black;
+  opacity: 1;
+}
+
+.title h6 {
+  position: relative;
+  top: 60%;
+  left: 50%;
+  /* height: 100vh; */
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 5px;
+  margin-top: 10px;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  line-height: 30px;
+}
+.navwrapper {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+}
+
+.navmenu {
+  position: relative;
+  width: 100vw;
+  height: 120px;
+}
+
+.navmenu .navcontroller {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  width: 80px;
+  height: 80px;
+  font-size: 17px;
+  text-align: center;
+  line-height: 80px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.navmenu .navclosebtn {
+  display: none;
+  color: gray;
+  font-family: "Roboto", sans-serif;
+}
+
+.navmenu .navopenbtn {
+  color: black;
+  width: 30px;
+  height: 30px;
+  padding: 0 0 50 50;
+  font-family: "Roboto", sans-serif;
+}
+
+.navmenu .navbtn {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  background-color: white;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 70px;
+  opacity: 0;
+  cursor: pointer;
+  transition: all ease-out 0.8s;
+}
+
+.navbtn p {
+  margin: 0;
+  z-index: 4;
+  color: black;
+  letter-spacing: 7px;
+  font-family: "Roboto", sans-serif;
+  transition: all ease-out 0.3s;
+}
+.navbtn a {
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease;
+}
+.navmenu .navopenbtn:hover {
+  /* background-color: rgb(55, 129, 79); */
+  color: white;
+}
+
+.navmenu.active .navopenbtn {
+  display: none;
+}
+
+.navmenu.active .navclosebtn {
+  display: block;
+  opacity: 1;
+  color: rgb(55, 129, 79);
+}
+
+.navmenu.active div:nth-child(2) {
+  bottom: 116%;
+  left: 0%;
+  opacity: 1;
+}
+
+.navmenu.active div:nth-child(3) {
+  bottom: 58%;
+  left: 0%;
+  opacity: 1;
+}
+
+.navmenu.active div:nth-child(4) {
+  bottom: 0%;
+  left: 0%;
+  opacity: 1;
+}
+
+img {
+  width: 100vw;
+  object-fit: cover;
+  height: 45%;
+  display: block;
+  object-position: 75% top;
+}
+
+@media screen and (min-width: 736px) {
+  .container .japa {
+    top: 0%;
     right: 4%;
-    width: 100px;
-    text-align: right;
-    font-size: 1rem;
-    font-family: "M PLUS Rounded 1c";
-    letter-spacing: 2px;
-    opacity: 1;
-    z-index: 5;
-    /* color:rgb(246, 244, 244) ; */
-}
-
-.title{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 100vh;
-    width: 65%;
-    transform: translate(-50%, -50%);
-}
-
-.title p{
-    position: relative;
-    top: 62%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font: helvetica;
-    color: black;
-    font-size: 30px;
-    text-align: center;
-    margin: 0;
-    padding-bottom: 20px;
-    letter-spacing: 6px;
-    font-family: 'Lato', sans-serif;
-    border-bottom: 1px solid black;
-}
-
-.title h6{
-    position: relative;
-    top: 60%;
-    left: 50%;
-    /* height: 100vh; */
-    transform: translate(-50%, -50%);
-    color: black;
-    font-size: 20px;
-    text-align: center;
-    letter-spacing: 5px;
-    margin-top: 10px;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    line-height: 30px;
-}
-.navwrapper{
-    position: absolute;
-    bottom: 0%;
-    right: 0%;
-}
-
-.navmenu{
-    position: relative;
-    width: 100vw;
-    height: 120px;
-}
-
-
-.navmenu .navcontroller{
-    position: absolute;
-    bottom: 0%;
-    right: 0%;
-    width: 80px;
-    height: 80px;
-    font-size: 17px;
-    text-align: center;
-    line-height: 80px;
-    cursor: pointer;
-    z-index: 3;
-}
-
-.navmenu .navclosebtn{
-    display: none;
-    color: gray;
-    font-family: 'Roboto', sans-serif;
-}
-
-.navmenu .navopenbtn{
-    color: black;
-    width: 30px;
-    height: 30px;
-    padding: 0 0 50 50;
-    font-family: 'Roboto', sans-serif;
-}
-
-.navmenu .navbtn{
-    position: absolute;
-    bottom: 0%;
-    right: 0%;
+    font-weight: 900;
+    /* color: white; */
+    font-size: 1.3rem;
+    width: 15%;
+  }
+  .title {
+    top: 23%;
+    height: 25vh;
     width: 100%;
-    height: 70px;
-    text-align: center;
-    background-color: white;
-    font-size: 0.8rem;
-    text-align: center;
-    line-height: 70px;
-    opacity: 0;
-    cursor: pointer;
-    transition: all ease-out 0.8s;
-}
-
-.navbtn p{
-   margin: 0;
-   z-index: 4;
-   color: black;
-   letter-spacing: 7px;
-   font-family: 'Roboto', sans-serif;
-   transition: all ease-out 0.3s;
-}
-.navbtn a{
-    text-decoration: none;
-    -webkit-transition: all 0.5s ease;
-}
-.navmenu .navopenbtn:hover{
-    /* background-color: rgb(55, 129, 79); */
-    color: white;   
-}
-
-.navmenu.active .navopenbtn{
-    display: none;
-}
-
-.navmenu.active .navclosebtn{
-    display: block;
-    opacity: 1;
-    color: rgb(55, 129, 79);
-}
-
-.navmenu.active div:nth-child(2){
-    bottom: 116%;
-    left: 0%;
-    opacity: 1;
-}
-
-.navmenu.active div:nth-child(3){
-    bottom: 58%;
-    left: 0%;
-    opacity: 1;
-}
-
-.navmenu.active div:nth-child(4){
-    bottom: 0%;
-    left: 0%;
-    opacity: 1;
-}
-
-
-@media screen and (min-width: 735px) {
-
-img{
-    /* padding-top: 50px; */
-    object-position: right top;
+  }
+  .title p {
+    border-bottom: none;
+    top: 55%;
+    color: white;
+    font-weight: 900;
+    font-size: 4rem;
+  }
+  .title h6 {
+    top: 35%;
+    font-size: 1.4rem;
+    color: white;
+  }
+  img {
     width: 100vw;
     object-fit: cover;
-    height: 50%;
-    /* filter: blur(1px); */
+    height: 100%;
+    display: block;
+    opacity: 0.7;
+    object-position: top 50%;
+  }
+  .navmenu .navcontroller {
+    display: none;
+  }
+  .navmenu div:nth-child(2) {
+    opacity: 1;
+    width: 33%;
+    right: 0%;
+    height: 90px;
+    line-height: 90px;
+    animation-delay: -2s;
+  }
+  .navmenu div:nth-child(3) {
+    opacity: 1;
+    width: 35%;
+    right: 32%;
+    height: 90px;
+    line-height: 90px;
+  }
+  .navmenu div:nth-child(4) {
+    opacity: 1;
+    width: 33%;
+    left: 0%;
+    height: 90px;
+    line-height: 90px;
+  }
 }
 
-
-}
-@media screen and (max-width: 1223px) {
-
-    img {
-        width: 100vw;
-        object-fit: cover;
-        height: 45%;
-        display: block;
-        opacity: 0.8;
-        object-position: 75% top;
-    }
-    .title {
-        width: 50%;
-    }
+@media screen and (min-width: 1000px) {
+  .title p {
+    border-bottom: none;
+    top: 75%;
+    color: white;
+    font-weight: 900;
+    font-size: 4rem;
+  }
+  .title h6 {
+    top: 60%;
+  }
+  img {
+    width: 100vw;
+    object-fit: cover;
+    height: 100%;
+    display: block;
+    opacity: 0.7;
+    object-position: 75% top;
+  }
+  .title p {
+    border-bottom: none;
+  }
 }

@@ -12,8 +12,8 @@ const Ball = (props) => {
         borderRadius: '50%',
         left: `${props.left}%`,
         bottom: `${props.bottom}%`,
-        backgroundColor: `${props.color}`,
-      };
+        backgroundColor: `${props.color}`
+          };
 
     return (
         <>
