@@ -1,210 +1,207 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c");
 .aboutme-wrapper {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-.button{
+.button {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 25vw 25vw 0;
+  border-color: transparent rgb(190, 188, 204) transparent transparent;
+}
+.button2 {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 25vw 0 0 25vw;
+  border-color: transparent transparent transparent rgb(190, 188, 204);
+}
+
+.button-name {
+  letter-spacing: 2px;
+  position: absolute;
+  top: 0%;
+  right: 3%;
+}
+.aboutme-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  background-color: rgb(253, 252, 244);
+  border-top: 5px solid rgba(233, 228, 228, 0.466);
+}
+
+.aboutme-header h2 {
+  margin: 0;
+  letter-spacing: 5px;
+  padding: 60px 40px 40px 40px;
+  font-family: "Lato", sans-serif;
+  color: rgb(65, 64, 64);
+}
+
+.image-deco {
+  position: relative;
+  height: 350px;
+}
+.deco {
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  width: 180px;
+  height: 180px;
+  background-color: rgb(254, 249, 210, 0.1);
+  transform-origin: left;
+  transform: translate(-35%, -75%) rotate(45deg);
+  border: 12px double #e5b3a3;
+  opacity: 0.7;
+  border-radius: 5px;
+  transition: 3s;
+}
+
+.profile-photo {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  width: 180px;
+  height: 180px;
+  transform: translate(-50%, -50%);
+  border: 12px double #78a085a6;
+  opacity: 0.9;
+  border-radius: 5px;
+}
+.aboutme-body {
+  background-color: #e5b3a3;
+  margin: 0;
+  padding: 50px 30px;
+  border-top: 7px solid rgba(228, 222, 222, 0.5);
+  border-bottom: 7px solid rgba(252, 246, 246, 0.5);
+}
+
+.aboutme-body .profile-1 span {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+.aboutme-body .profile-1 .profilesection a {
+  text-decoration: none;
+  color: rgb(94, 93, 93);
+}
+.aboutme-body .profile-1 .profilesection {
+  transition: all 0.3s ease-in-out;
+  margin-top: 40px;
+}
+.aboutme-body .profile-1 .profilesection:hover {
+  transform: scale(1.1);
+}
+.aboutme-body .profile-1 .profilesection h5 {
+  font-size: 1em;
+  width: 150px;
+  border-radius: 10px;
+  box-shadow: 2px 6px #888888;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: rgb(241, 243, 232);
+}
+.aboutme-body .profile-1 h5 {
+  letter-spacing: 4px;
+  font-size: 1.2em;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+
+@media screen and (min-width: 736px) and (max-width: 999px) {
+  .profile-1 {
+    padding: 0 20%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .aboutme-body .profile-1 p {
+    font-size: 1.4em;
+    letter-spacing: 2px;
+    line-height: 30px;
+    font-weight: 500;
+  }
+
+  .aboutme-body .profile-1 h5 {
+    letter-spacing: 4px;
+    font-size: 1.7em;
+  }
+
+  .aboutme-body .profile-1 .profilesection h5 {
+    font-size: 1em;
+    width: 150px;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgb(241, 243, 232);
+  }
+
+  .profile-1 {
+    padding: 0 10%;
+  }
+  .aboutme-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .aboutme-header {
+    position: relative;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    background-color: rgb(253, 252, 244);
+    border-top: 7px solid rgb(204, 201, 211);
+    border-bottom: 7px solid rgb(211, 209, 218);
+  }
+  .deco {
+    top: 45%;
+    transition: none;
+  }
+  .profile-photo {
+    top: 50%;
+  }
+  .aboutme-body {
+    background-color: #e5b3a3;
+    margin: 0;
+    width: 60%;
+    padding: 50px 30px;
+    border-top: 7px solid rgba(228, 222, 222, 0.5);
+    border-bottom: 7px solid rgba(252, 246, 246, 0.5);
+  }
+
+  .button {
     position: absolute;
     top: 0%;
     right: 0%;
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 25vw 25vw 0;
+    border-width: 0 10vw 10vw 0;
     border-color: transparent rgb(190, 188, 204) transparent transparent;
-}
-.button2{
+  }
+  .button2 {
     position: absolute;
     bottom: 0%;
     left: 0%;
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 25vw 0 0 25vw;
+    border-width: 10vw 0 0 10vw;
     border-color: transparent transparent transparent rgb(190, 188, 204);
-}
-
-.button-name {
-    letter-spacing: 2px;
-    position: absolute;
-    top: 0%;
-    right: 3%;
-}
-.aboutme-header {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    background-color: rgb(253, 252, 244);
-    border-top: 5px solid rgba(233, 228, 228, 0.466);
-}
-
-.aboutme-header h2 {
-    margin: 0;
-    letter-spacing: 5px;
-    padding: 60px 40px 40px 40px;
-    font-family: 'Lato', sans-serif;
-    color: rgb(65, 64, 64);
-}
-
-.image-deco{
-    position: relative;
-    height: 350px;
-}
-.deco{
-    position: absolute;
-    left: 50%;
-    top: 35%;
-    width: 180px;
-    height: 180px;
-    background-color: rgb(254, 249, 210, 0.1);
-    transform-origin: left;
-    transform: translate(-35%, -75%)  rotate(45deg);
-    border: 12px double #e5b3a3;
-    opacity: .7;
-    border-radius: 5px;
-    transition: 3s;  
-}
-
-.profile-photo {
-    position: absolute;
-    left: 50%;
-    top: 40%;
-    width: 180px;
-    height: 180px;
-    transform: translate(-50%, -50%);
-    border: 12px double	#78a085a6;
-    opacity: .9;
-    border-radius: 5px;
-}
-.aboutme-body{
-    background-color: #e5b3a3;
-    margin: 0;
-    padding: 50px 30px;
-    border-top: 7px solid rgba(228, 222, 222, 0.5);
-    border-bottom: 7px solid rgba(252, 246, 246, 0.5);
-}
-
-.aboutme-body .profile-1 p{
-    font-size: 1em;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 1px; 
-    line-height: 30px;
-    text-align: center;
-}
-.aboutme-body .profile-1 .profilesection a{
-    text-decoration: none;
-    color: rgb(94, 93, 93);
-}
-.aboutme-body .profile-1 .profilesection{
-    transition: all .3s ease-in-out;
-    margin-top: 40px;
-
-}
-.aboutme-body .profile-1 .profilesection:hover{
-    transform: scale(1.1); 
-}
-.aboutme-body .profile-1 .profilesection h5{
-    font-size: 1em;
-    width: 150px;
-    border-radius: 10px;
-    box-shadow: 2px 6px #888888;
-    margin: 0 auto;
-    padding: 10px;
-    background-color: rgb(241, 243, 232);
-}
-.aboutme-body .profile-1 h5{
-    letter-spacing: 4px;
-    font-size: 1.2em;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-}
-
-@media screen and (min-width: 736px) and (max-width: 999px){
-
-    .profile-1{
-        padding: 0 20%;
-    }   
-    
-}
-
-@media screen and (min-width: 1000px) {
-    .aboutme-body .profile-1 p{
-        font-size: 1.4em;
-        letter-spacing: 2px; 
-        line-height: 30px;
-        font-weight: 500;
-    }
-    
-    .aboutme-body .profile-1 h5{
-        letter-spacing: 4px;
-        font-size: 1.7em;
-    }
-    
-    .aboutme-body .profile-1 .profilesection h5{
-        font-size: 1em;
-        width: 150px;
-        border-radius: 10px;
-        margin: 0 auto;
-        padding: 10px;
-        background-color: rgb(241, 243, 232);
-    }
-
-    .profile-1{
-        padding: 0 10%;
-    } 
-    .aboutme-wrapper{
-        display: flex;
-        flex-direction: row;
-    }
-    .aboutme-header {
-        position: relative;
-        width: 40%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-items: center;
-        background-color: rgb(253, 252, 244);
-        border-top: 7px solid rgb(204, 201, 211);
-        border-bottom: 7px solid rgb(211, 209, 218);
-    }
-    .deco{
-        top: 45%;
-        transition: none;  
-    }
-    .profile-photo {
-        top: 50% 
-    }
-    .aboutme-body{
-        background-color: #e5b3a3;
-        margin: 0;
-        width: 60%;
-        padding: 50px 30px;
-        border-top: 7px solid rgba(228, 222, 222, 0.5);
-        border-bottom: 7px solid rgba(252, 246, 246, 0.5);
-    }
-
-    .button{
-        position: absolute;
-        top: 0%;
-        right: 0%;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 10vw 10vw 0;
-        border-color: transparent rgb(190, 188, 204) transparent transparent;
-    }
-    .button2{
-        position: absolute;
-        bottom: 0%;
-        left: 0%;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 10vw 0 0 10vw;
-        border-color: transparent transparent transparent rgb(190, 188, 204);
-    }
+  }
 }

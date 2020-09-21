@@ -1,26 +1,26 @@
 .nav {
-    display: flex;
-    list-style-type: none;
-    /* flex-direction: row; */
-    justify-content: center;
-    background-color: #426d49;
-    align-items: center;
-    margin: 0 auto;
-    padding: 0;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%;
-    z-index: 5;
+  display: flex;
+  list-style-type: none;
+  /* flex-direction: row; */
+  justify-content: center;
+  background-color: #426d49;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+  z-index: 5;
 }
 .img {
-    height: 100%;
-    width: 200px;
+  height: 100%;
+  width: 200px;
 }
 
-.navlist{
-    padding: 1rem ;
+.navlist {
+  padding: 1rem;
 }
-.navlist span{
-    color: white;
-    font-size: 1.5rem;
+.navlist span {
+  color: white;
+  font-size: 1.5rem;
 }

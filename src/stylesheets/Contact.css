@@ -41,8 +41,9 @@
   text-align: center;
   font-family: "Lato", sans-serif;
 }
-.contact-dis, .email{
-    padding: 0 10%;
+.contact-dis,
+.email {
+  padding: 0 10%;
 }
 .contact-links {
   display: flex;
@@ -86,25 +87,25 @@
 }
 
 @media screen and (min-width: 1000px) {
-
-.contact-flex{
+  .contact-flex {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: row;
     margin-bottom: 7rem;
-}
-.contact-links .linkedin,
-.twitter {
-  height: 150px;
-  width: 150px;
-  display: flex;
-  font-size: 2rem;
-  justify-content: center;
-  align-items: center;
-}
-.contact-dis, .email{
+  }
+  .contact-links .linkedin,
+  .twitter {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-dis,
+  .email {
     font-size: 1.5rem;
     width: 100%;
-}
+  }
 }
