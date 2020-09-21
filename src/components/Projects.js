@@ -4,7 +4,7 @@ import StateContext from "../store";
 import Project from "./nestedcomponents/Project";
 
 const Projects = () => {
-  const { store, dispatch } = useContext(StateContext);
+  const { store } = useContext(StateContext);
   const ecoA = ["Node.js", "Express", "MongoDB", "React"];
   const farmers = ["Ruby on Rails", "PostgreSQL", "Bootstrap"];
   return (
