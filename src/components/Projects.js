@@ -36,11 +36,11 @@ const Projects = () => {
           <hr className="accessory"></hr>
           <Project
             projectName="EcoA"
-            projectDescription="EcoA is a recipe platform for zero waste products to introduce the way we can reduce the waste and the footprint at home. It also helps to reduce the packaging by making the products from raw ingredients."
+            projectDescription="EcoA is a recipe platform for zero waste products in order to introduce the way we can reduce the waste and the footprint from home. It also cut down the unnecessary packaging by making the products from raw ingredients."
             repoUrl="https://github.com/T3A2MERNStack"
             imageUrl={require("../img/ecoanew.png")}
             stacks={ecoA}
-            webUrl="https://ecoa.netlify.app/"
+            webUrl="https://ecoa.space/"
           />
           <hr className="accessory"></hr>
           <Project
@@ -49,7 +49,7 @@ const Projects = () => {
                 ? "ONLINE FARMERS MARKET"
                 : "ファーマーズマーケット"
             }
-            projectDescription="Seico mart is the online farmers market where the farmer can meet the consumer to be able to buy grocery locally and directly without any middle man. It has benefit for the both party."
+            projectDescription="Seico mart is the online farmers market where the farmer can meet the consumer. The consumers are able to buy local quality produces directly from the farmers. It benefits for both farmers and consumers."
             repoUrl="https://github.com/ArisaOkuyama/farmers_market"
             webUrl="https://arcane-tor-43519.herokuapp.com/"
             stacks={farmers}

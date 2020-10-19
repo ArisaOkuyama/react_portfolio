@@ -25,12 +25,12 @@ const Contact = () => {
           </div>
           <div className="contact-links">
             <div className="linkedin">
-              <a href="https://www.linkedin.com/in/arisaokuyama/">
+              <a href="https://www.linkedin.com/in/arisaokuyama/" target="_blank">
                 <FontAwesomeIcon icon={faLinkedin} size="2x" />
               </a>
             </div>
             <div className="twitter">
-              <a href="https://twitter.com/ArisaOkuyama">
+              <a href="https://twitter.com/ArisaOkuyama" target="_blank">
                 <FontAwesomeIcon icon={faTwitter} size="2x" />
               </a>
             </div>

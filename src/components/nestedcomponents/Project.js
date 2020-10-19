@@ -30,13 +30,13 @@ const Project = (props) => {
         <p>{props.projectDescription}</p>
         <div className="projectimage border">
           <div className="link-wrapper">
-            <a href={props.repoUrl} className="project-link">
+            <a href={props.repoUrl} target="_blank" className="project-link">
               <h5>
                 CODE
                 <FontAwesomeIcon icon={faGithub} size="1x" />
               </h5>
             </a>
-            <a href={props.webUrl} className="project-link">
+            <a href={props.webUrl} target="_blank" className="project-link">
               <h5>VISIT WEBSITE</h5>
             </a>
           </div>
